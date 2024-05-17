@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import MainPage from "./pages/Main/index.jsx";
+import RegistrationPage from "./pages/Registration/index.jsx";
+import ViewPage from "./pages/View/index.jsx";
+import { Layout } from "./components/Layout/index.jsx";
+import "./App.css";
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/view" element={<ViewPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

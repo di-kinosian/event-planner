@@ -1,0 +1,26 @@
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.input-serch {
+  box-sizing: border-box;
+  width: 290px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0 8px;
+  height: 32px;
+  font-size: 14px;
+
+  &::placeholder {
+    color: gray;
+  }
+}
+
+.view-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

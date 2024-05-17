@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Conference",
+      "description": "Annual tech conference Annual tech conference Annual tech conferenceAnnual tech conferenceAnnual tech conferenceAnnual tech conference Annual tech conference Annual tech conference Annual tech conference Annual tech conference Annual tech conference Annual tech conference Annual tech conference",
+      "date": "2024-06-15",
+      "organizer": "Tech Events Inc."
+    },
+    {
+      "id": 2,
+      "title": "Workshop",
+      "description": "JavaScript workshop for beginners",
+      "date": "2024-07-10",
+      "organizer": "Code Academy"
+    },
+    {
+      "id": 3,
+      "title": "Hackathon",
+      "description": "24-hour coding competition",
+      "date": "2024-08-20",
+      "organizer": "DevHackers"
+    },
+    {
+      "id": 4,
+      "title": "Seminar",
+      "description": "Business leadership seminar",
+      "date": "2024-09-25",
+      "organizer": "Leadership Institute"
+    },
+    {
+      "id": 5,
+      "title": "Art Exhibition",
+      "description": "Contemporary art exhibition",
+      "date": "2024-10-15",
+      "organizer": "Art Gallery"
+    },
+    {
+      "id": 6,
+      "title": "Music Festival",
+      "description": "Annual music festival featuring various artists",
+      "date": "2024-11-20",
+      "organizer": "Music Events Ltd."
+    }
+  ]
+}

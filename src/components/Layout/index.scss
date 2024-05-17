@@ -1,0 +1,9 @@
+@import "src/styles/variables.scss";
+
+.layout {
+  &-content {
+    box-sizing: border-box;
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+}
