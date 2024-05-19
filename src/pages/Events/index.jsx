@@ -34,7 +34,7 @@ const options = [
 const EventsPage = () => {
   const [sorting, setSorting] = useState("title?asc");
 
-  const { data, loading } = useFetch("http://localhost:5001/api/events");
+  const { data, loading } = useFetch("https://floating-spire-28797-0031414f3322.herokuapp.com/api/events");
 
   return (
     <div className="page-content">

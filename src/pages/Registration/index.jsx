@@ -43,7 +43,7 @@ const RagistrationPage = () => {
     console.log(data);
 
     fetch(
-      `http://localhost:5001/api/events/${eventId}/participant`,
+      `https://floating-spire-28797-0031414f3322.herokuapp.com/api/events/${eventId}/participant`,
       options,
     ).then((res) => {
       if (res.ok) {

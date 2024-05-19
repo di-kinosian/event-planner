@@ -10,7 +10,7 @@ const EventDetails = () => {
   const { eventId } = useParams();
 
   const { data, loading } = useFetch(
-    `http://localhost:5001/api/events/${eventId}`,
+    `https://floating-spire-28797-0031414f3322.herokuapp.com/api/events/${eventId}`,
   );
   const [searchTerm, setSearchTerm] = useState("");
 
