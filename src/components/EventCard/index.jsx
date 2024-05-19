@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
-const EventCard = ({ title, description, date, organizer }) => {
+const EventCard = ({ title, description, date, organizer, id }) => {
   return (
     <div className="event-card">
       <div className="card-info">
@@ -11,8 +11,8 @@ const EventCard = ({ title, description, date, organizer }) => {
       </div>
 
       <div className="actions">
-        <Link to="/registration">Registration</Link>
-        <Link to="/view">View</Link>
+        <Link to={`/${id}/registration`}>Registration</Link>
+        <Link to={`/${id}`}>View</Link>
       </div>
     </div>
   );

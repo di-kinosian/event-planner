@@ -20,10 +20,6 @@ export const validationSchema = Yup.object().shape({
         return /^\d{2}\.\d{2}\.\d{4}$/.test(value);
       },
     )
-    .test("valid-date", "Please enter a valid date", function (value) {
-      const date = new Date(value);
-      return date instanceof Date && !isNaN(date);
-    })
     .max(new Date(), "Date of birth cannot be in the future")
     .required("Date of birth is required"),
   whereHeard: Yup.string().required(

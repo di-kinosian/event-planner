@@ -3,7 +3,8 @@ import "./index.scss";
 export const Layout = (props) => {
   return (
     <div className="layout">
-      <div className="layout-content">{props.children}</div>
+      <header className="layout-header"></header>
+      <main className="layout-content">{props.children}</main>
     </div>
   );
 };

@@ -1,0 +1,39 @@
+.page {
+  &-panel {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-sorter {
+      display: flex;
+      width: 250px;
+      gap: 8px;
+      align-items: center;
+
+      span {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.input-serch {
+  width: 290px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0 8px;
+  height: 32px;
+  font-size: 14px;
+
+  &::placeholder {
+    color: gray;
+  }
+}

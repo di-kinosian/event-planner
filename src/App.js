@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import MainPage from "./pages/Main/index.jsx";
+import EventsPage from "./pages/Events/index.jsx";
 import RegistrationPage from "./pages/Registration/index.jsx";
-import ViewPage from "./pages/View/index.jsx";
+import EventDetails from "./pages/EventDetails/index.jsx";
 import { Layout } from "./components/Layout/index.jsx";
 import "./App.css";
 
@@ -14,9 +14,9 @@ function App() {
     <Router history={history}>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<MainPage />} />
-          <Route path="/registration" element={<RegistrationPage />} />
-          <Route path="/view" element={<ViewPage />} />
+          <Route exact path="/" element={<EventsPage />} />
+          <Route path="/:eventId" element={<EventDetails />} exact/>
+          <Route path="/:eventId/registration" element={<RegistrationPage />} exact/>
         </Routes>
       </Layout>
     </Router>

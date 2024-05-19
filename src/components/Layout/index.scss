@@ -1,9 +1,26 @@
 @import "src/styles/variables.scss";
 
 .layout {
+  height: 100%;
+
+  &-header {
+    height: 48px;
+    border-bottom: 1px solid #aeaeae;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
   &-content {
-    box-sizing: border-box;
-    max-width: $desktop-width;
     margin: 0 auto;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    max-width: $desktop-width;
+    min-height: 100%;
   }
 }
