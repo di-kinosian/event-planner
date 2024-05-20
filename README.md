@@ -1,6 +1,6 @@
 # EVENT PLANNER APPLICATION
 
-This project was published with Vercel - [Link](https://event-planner-dlb7v3qn7-dianas-projects-f423ca5a.vercel.app/).
+This project was published with Vercel - [Link](https://event-planner-jttzr8wyh-dianas-projects-f423ca5a.vercel.app/).
 
 ## Setup project locally
 
