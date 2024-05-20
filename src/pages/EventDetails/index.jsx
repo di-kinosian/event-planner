@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from "react";
-import { participants } from "../../helpers/participants";
 import UserCard from "../../components/UserCard";
 import "./index.scss";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import { formatDate } from "../../helpers/format";
+import { Link } from "react-router-dom/dist";
 
 const EventDetails = () => {
   const { eventId } = useParams();
@@ -22,9 +22,7 @@ const EventDetails = () => {
     return (
       data?.participants.filter(
         (participant) =>
-          participant.name
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
+          participant.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
           participant.email.toLowerCase().includes(searchTerm.toLowerCase()),
       ) || []
     );
@@ -37,6 +35,7 @@ const EventDetails = () => {
   return (
     <>
       <div className="event-details">
+        <Link to={"/"}>Back to all events</Link>
         <h1>{data.title}</h1>
         <p>{data.description}</p>
         <p>Date: {formatDate(data.eventDate)}</p>

@@ -54,6 +54,7 @@ const RagistrationPage = () => {
 
   return (
     <div className="registration">
+      {!isSubmitted && <Link to={"/"}>Back to all events</Link>}
       <h1>Event registration</h1>
       {isSubmitted ? (
         <div>
